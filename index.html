@@ -48,11 +48,14 @@
                 </div>
             </div>
             <div class="banner-img-container">
-                <img src="./icons/Heart.svg" alt="Heart" class="banner-img-addon">
                 <img src="./icons/HappyConsumer.png" alt="Happy Customer" class="banner-img">
 
                 <div class="banner-img-overlay">
-                    <img src="./icons/Smile.svg" alt="Salad" class="banner-img-addon">
+                    <img src="./icons/Heart.svg" alt="Heart" class="banner-img-addon">
+                </div>
+
+                <div class = "banner-img-overlay">
+                    <img src="./icons/Smile.svg" alt="Smile" class="banner-img-addon">
                     <span class = "banner-stats-highlight"><b>Our Happy Customer</b></span>
                     <img src = "./icons/Star.svg" alt = "Star" class = "banner-img-addon">
                     <span class = "banner-stats-highlight">4.9</span>
@@ -63,14 +66,16 @@
                     <span class ="banner-stats-label">Daily Calories</span>
                     <span class = "banner-stats-highlight">123 Cal</span>
 
-                    <progress value = "30" max = "100" class = "hyst-bar"></progress>
-                    <progress value = "40" max = "100" class = "hyst-bar"></progress>
-                    <progress value = "50" max = "100" class = "hyst-bar"></progress>
-                    <progress value = "40" max = "100" class = "hyst-bar"></progress>
-                    <progress value = "30" max = "100" class = "hyst-bar"></progress>
-                    <progress value = "60" max = "100" class = "hyst-bar"></progress>
-                    <progress value = "70" max = "100" class = "hyst-bar"></progress>
-                    <progress value = "80" max = "100" class = "hyst-bar"></progress>
+                    <div class = "hystogram">
+                        <progress value = "30" max = "100" class = "hyst-bar"></progress>
+                        <progress value = "40" max = "100" class = "hyst-bar"></progress>
+                        <progress value = "50" max = "100" class = "hyst-bar"></progress>
+                        <progress value = "40" max = "100" class = "hyst-bar"></progress>
+                        <progress value = "30" max = "100" class = "hyst-bar"></progress>
+                        <progress value = "60" max = "100" class = "hyst-bar"></progress>
+                        <progress value = "70" max = "100" class = "hyst-bar"></progress>
+                        <progress value = "80" max = "100" class = "hyst-bar"></progress>
+                    </div>
 
                 </div>
             </div>
@@ -122,11 +127,16 @@
                     <p class = "section-smaller-text">
                         We are very happy if you are satisfied with our service and products, let's read pure reviews from customers who bought our products.
                     </p>
-                    <span class = "reviews-page-num">02</span>
-                    <span class = "reviews-total-num">/05</span>
 
-                    <button class = "reviews-btn"><img src = "./icons/ArrowBack.svg" alt = "Back Arrow" class = "text-symbol"></button>
-                    <button class = "reviews-btn"><img src = "./icons/Arrow.svg" alt = "Forward Arrow" class="text-symbol"></button>
+                    <div class = "reviews-page-counter">
+                        <span class = "reviews-page-num">02</span>
+                        <span class = "reviews-total-num">/05</span>
+                    </div>
+
+                    <div class = "reviews-btn-container">
+                        <button class = "reviews-btn"><img src = "./icons/ArrowBack.svg" alt = "Back Arrow" class = "text-symbol"></button>
+                        <button class = "reviews-btn"><img src = "./icons/Arrow.svg" alt = "Forward Arrow" class="text-symbol"></button>
+                    </div>
 
                 </div>
                 <div class = "reviews-content">
@@ -169,19 +179,19 @@
             <div class = "menu-content">
                 <article class="menu-card">
                     <img src = "./icons/FirstDish.png" alt = "First Dish" class = "menu-card-img">
-                    <h3 class = "menu-card-header">Mini Salad Yummy</h3>
+                    <span class = "menu-card-name">Mini Salad Yummy</span>
                     <h2 class = "menu-card-price">$ 2.99</span>
                 </article>
 
                 <article class="menu-card">
                     <img src = "./icons/SecondDish.png" alt = "Second Dish" class = "menu-card-img">
-                    <h3 class = "menu-card-header">Completed Salad</h3>
+                    <span class = "menu-card-name">Completed Salad</span>
                     <h2 class = "menu-card-price">$ 3.99</span>
                 </article>
 
                 <article class="menu-card">
                     <img src = "./icons/ThirdDish.png" alt = "Third Dish" class = "menu-card-img">
-                    <h3 class = "menu-card-header">Salad Yummy Red</h3>
+                    <span class = "menu-card-name">Salad Yummy Red</span>
                     <h2 class = "menu-card-price">$ 3.99</span>
                 </article>
             </div>
@@ -201,53 +211,55 @@
                     <input type = "submit" value = "Subscribe" class = "subscribe-submit"></button>
                 </form>
             </div>
-
-            <footer class = "footer">
-                <div class = "copyright">
-                    <h3 class = "logo"> <span class = "logo-highlight">JEZ</span> SALAD </h3>
-                    <p class="copyright-text">Jez Salad is the pioneer of healthy fruit salad with high nutrition.</p>
-                    <span class = "copyright-text">©Copyright Jez Salad</span>
-                </div>
-
-                <div class = "footer-links">
-                    <h3 class = "footer-links-header">FEATURE</h3>
-                    <a href = "#" class = "footer-link">Menu</a>
-                    <a href = "#" class = "footer-link">Promo</a>
-                    <a href = "#" class = "footer-link">Contact</a>
-                    <a href = "#" class = "footer-link">About Us</a>
-            </footer>
-
-            <address class = "address">
-                <h3 class = "address-header">Get In Touch</h3>
-                <div class = "address-container">
-                    <img class = "address-icon" src = "./icons/Location.svg" alt = "Location">
-                    <span class = "address-text">8819 Ohio St. South Gate, CA 90280</span>
-                </div>
-                <div class = "address-container">
-                    <img class = "address-icon" src = "./icons/Mail.svg" alt = "Email">
-                    <span class = "address-text">Ourstudio@hello.com</span>
-                </div>
-                <div class = "address-container">
-                    <img class = "address-icon" src = "./icons/Phone.svg" alt = "Phone">
-                    <span class = "address-text">+1 386-688-3295</span>
-                </div>
-            </address>
-
-            <address class = "social-media">
-                <a class = "social-media-link" href = "#">
-                    <img class = "social-media-icon" src = "./icons/Twitter.svg" alt = "Twitter">
-                </a>
-
-                <a class = "social-media-link" href = "#">
-                    <img class = "social-media-icon" src = "./icons/LinkedIn.svg" alt = "LinkedIn">
-                </a>
-
-                <a class = "social-media-link" href = "#">
-                    <img class = "social-media-icon" src = "./icons/Insta.svg" alt = "Insta">
-                </a>
-                <span class = "social-media-text">Follow Us On Social Media</span>
-            </address>
-
         </section>
+    </main>
+
+    <footer class = "footer">
+        <div class = "copyright">
+            <h3 class = "logo"> <span class = "logo-highlight">JEZ</span> SALAD </h3>
+            <p class="copyright-text">Jez Salad is the pioneer of healthy fruit salad with high nutrition.</p>
+            <span class = "copyright-text">©Copyright Jez Salad</span>
+        </div>
+
+        <div class = "footer-links">
+            <h3 class = "footer-links-header">FEATURE</h3>
+            <a href = "#" class = "footer-link">Menu</a>
+            <a href = "#" class = "footer-link">Promo</a>
+            <a href = "#" class = "footer-link">Contact</a>
+            <a href = "#" class = "footer-link">About Us</a>
+        </div>
+
+        <address class = "address">
+            <h3 class = "address-header">GET IN TOUCH</h3>
+            <div class = "address-container">
+                <img class = "address-icon" src = "./icons/Location.svg" alt = "Location">
+                <span class = "address-text">8819 Ohio St. South Gate, CA 90280</span>
+            </div>
+            <div class = "address-container">
+                <img class = "address-icon" src = "./icons/Mail.svg" alt = "Email">
+                <span class = "address-text">Ourstudio@hello.com</span>
+            </div>
+            <div class = "address-container">
+                <img class = "address-icon" src = "./icons/Phone.svg" alt = "Phone">
+                <span class = "address-text">+1 386-688-3295</span>
+            </div>
+        </address>
+
+        <address class = "social-media">
+            <a class = "social-media-link" href = "#">
+                <img class = "social-media-icon" src = "./icons/Twitter.svg" alt = "Twitter">
+            </a>
+
+            <a class = "social-media-link" href = "#">
+                <img class = "social-media-icon" src = "./icons/LinkedIn.svg" alt = "LinkedIn">
+            </a>
+
+            <a class = "social-media-link" href = "#">
+                <img class = "social-media-icon" src = "./icons/Insta.svg" alt = "Insta">
+            </a>
+            <span class = "social-media-text">Follow Us On Social Media</span>
+        </address>
+
+    </footer>
 </body>
 </html>
