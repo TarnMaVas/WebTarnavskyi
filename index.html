@@ -4,77 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JEZ SALAD</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
 
-        <h3 class = "logo"> <span class = "logo-highlight">JEZ</span> SALAD </h3>
+        <h3 class = "logo bold dark-gray"> <span class = "orange black">JEZ</span> SALAD </h3>
 
-        <nav class="header-nav">
-            <a class="header-link" href="#">Home</a>
-            <a class="header-link" href="#">Menu</a>
-            <a class="header-link" href="#">Contact</a>
-            <a class="header-link" href="#">About Us</a>
+        <div class="header-nav">
+            <a class="header-link orange bold" href="#">Home</a>
+            <a class="header-link gray" href="#">Menu</a>
+            <a class="header-link gray" href="#">Contact</a>
+            <a class="header-link gray" href="#">About Us</a>
 
-            <button class="sign-up-btn">Sign</button>
-        </nav>
+        </div>
+
+        <button class="sign-up-btn semibold white btn">Sign</button>
 
     </header>
 
     <main class="main">
+
+        <img src="./icons/Stripes.png" class="background-stripes">
+
         <section class="banner">
             <div class="banner-content">
-                <h4 class="banner-subheader">#1 Best Healthy Salad</h4>
-                <h1 class="banner-header">
-                    Skip The Diet, Just Eat Healthy With Jez Salad
+                <h4 class="banner-subheader centered-text semibold orange">#1 Best Healthy Salad</h4>
+                <h1 class="banner-header bold gray">
+                    <span class = "orange">Skip</span> The Diet, Just Eat Healthy With Jez Salad
                 </h1>
-                <p class="section-bigger-text">
+                <p class="section-bigger-text light-gray">
                     Imagine you don't need a diet because we provide healthy and delicious food for you!
                 </p>
-                <button class="banner-order-btn">Order Food</button>
+                <button class="banner-order-btn semibold white btn">Order Food</button>
                 <div class="banner-stats-display">
                     <div class="banner-stats">
-                        <span class="banner-stats-highlight"><b>5000+</b></span>
-                        <span class="banner-stats-label">Customer</span>
+                        <span class="banner-stats-highlight dark-gray semibold"><b>5000+</b></span>
+                        <span class="banner-stats-label light-gray">Customer</span>
                     </div>
                     <div class="banner-stats">
-                        <span class="banner-stats-highlight"><b>8000+</b></span>
-                        <span class="banner-stats-label">Delivery</span>
+                        <span class="banner-stats-highlight dark-gray semibold"><b>8000+</b></span>
+                        <span class="banner-stats-label light-gray">Delivery</span>
                     </div>
                     <div class="banner-stats">
-                        <span class="banner-stats-highlight"><b>1000+</b></span>
-                        <span class="banner-stats-label">Ratings</span>
+                        <span class="banner-stats-highlight dark-gray semibold"><b>1000+</b></span>
+                        <span class="banner-stats-label light-gray">Ratings</span>
                     </div>
                 </div>
             </div>
             <div class="banner-img-container">
                 <img src="./icons/HappyConsumer.png" alt="Happy Customer" class="banner-img">
 
-                <div class="banner-img-overlay">
-                    <img src="./icons/Heart.svg" alt="Heart" class="banner-img-addon">
-                </div>
+                <img src="./icons/Heart.svg" alt="Heart" class="banner-img-addon" id="heart">
+
 
                 <div class = "banner-img-overlay">
-                    <img src="./icons/Smile.svg" alt="Smile" class="banner-img-addon">
-                    <span class = "banner-stats-highlight"><b>Our Happy Customer</b></span>
-                    <img src = "./icons/Star.svg" alt = "Star" class = "banner-img-addon">
-                    <span class = "banner-stats-highlight">4.9</span>
-                    <span class = "banner-stats-label">(1.989 Reviews)</span>
-                </div>
+                    <div class="smily-block">
+                        <img src="./icons/Smile.svg" alt="Smile" class="banner-img-addon" id="smile">
+                        <div class = "smily-block-content">
 
-                <div class = "banner-img-overlay">
-                    <span class ="banner-stats-label">Daily Calories</span>
-                    <span class = "banner-stats-highlight">123 Cal</span>
+                            <span class = "banner-stats-label semibold gray">Our Happy Customer</span>
+                            <div smily-block-content-text>
+                                <img src = "./icons/Star.svg" alt = "Star" class = "banner-img-addon" id = "star">
+                                <span class = "banner-stats-label semibold gray">4.9</span>
+                                <span class = "banner-stats-label regular gray-transparent">(1.989 Reviews)</span>
+                            </div>
+                        </div>
+                    </div>
 
-                    <div class = "hystogram">
-                        <progress value = "30" max = "100" class = "hyst-bar"></progress>
-                        <progress value = "40" max = "100" class = "hyst-bar"></progress>
-                        <progress value = "50" max = "100" class = "hyst-bar"></progress>
-                        <progress value = "40" max = "100" class = "hyst-bar"></progress>
-                        <progress value = "30" max = "100" class = "hyst-bar"></progress>
-                        <progress value = "60" max = "100" class = "hyst-bar"></progress>
-                        <progress value = "70" max = "100" class = "hyst-bar"></progress>
-                        <progress value = "80" max = "100" class = "hyst-bar"></progress>
+
+                    <div class="hist-block">
+                    
+                        <span class ="banner-stats-label gray semibold">Daily Calories</span>
+                        <span class = "banner-stats-highlight semibold gray"><span class='black-text'>123</span> Cal</span>
+
+                        <div class = "histogram">
+                            <div class="hist-bar">
+                               <div class="hist-color h1"></div> 
+                            </div>
+                            <div class="hist-bar">
+                                <div class="hist-color h2"></div>
+                            </div>
+                            <div class="hist-bar">
+                                <div class="hist-color h3"></div>
+                            </div>
+                            <div class="hist-bar">
+                                <div class="hist-color h4"></div>
+                            </div>
+                            <div class="hist-bar">
+                                <div class="hist-color h5"></div>
+                            </div>
+                            <div class="hist-bar">
+                                <div class="hist-color h6"></div>
+                            </div>
+                            <div class="hist-bar">
+                                <div class="hist-color h7"></div>
+                            </div>
+                            <div class="hist-bar">
+                                <div class="hist-color h8"></div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -83,182 +112,190 @@
 
         <section class="why-us">
             <div class="why-us-intro">
-                <h2 class="section-header">WHY CHOOSE US FOR YOUR HEALTHY FOOD</h2>
-                <p class="section-bigger-text">
+                <h2 class="section-header semibold dark-gray">WHY CHOOSE US <br> FOR <span class = 'orange'> YOUR HEALTHY FOOD</span></h2>
+                <p class="section-bigger-text light-gray">
                     We continue to consistently choose and maintain the quality of the fruit served, so that it remains fresh and nutritious when you eat it.
                 </p>
             </div>
 
             <div class="why-us-content">
-                <article class="why-us-card">
+                <article class="why-us-card orange-border">
                     <img src="./icons/FarmIcon.svg" alt="Farm" class="why-us-card-img">
-                    <h3 class="why-us-card-header">Own fruit orchard</h3>
-                    <p class="card-text">
+                    <h3 class="card-header  black-text semibold">Own fruit orchard</h3>
+                    <p class="card-text regular gray">
                         Langsung dari Kebun Sendiri yang tersebar di setiap provinsi yang memiliki cabang toko Jez Salad.
                     </p>
-                    <a href="#" class="why-us-card-link">Learn More <img src = "./icons/Arrow.svg" alt = "Arrow" class = "text-symbol"></a>
+                    <a href="#" class="why-us-card-link regular gray btn">Learn More <img src = "./icons/Arrow.svg" alt = "Arrow" class = "text-symbol"></a>
                 </article>
 
-                <article class="why-us-card">
+                <article class="why-us-card orange-shadow">
                     <img src="./icons/NumberIcon.svg" alt="Number" class="why-us-card-img">
-                    <h3 class="why-us-card-header">#1 Healthy Fruit Salad</h3>
-                    <p class="card-text">
+                    <h3 class="card-header black-text semibold">#1 Healthy Fruit Salad</h3>
+                    <p class="card-text regular gray">
                         The pioneer of healthy fruit salads that are delicious & suitable for all people with the best quality assurance.
                     </p>
-                    <a href="#" class="why-us-card-link">Learn More <img src = "./icons/Arrow.svg" alt = "Arrow" class = "text-symbol"></a>
+                    <a href="#" class="why-us-card-link regular white orange-background btn">Learn More <img src = "./icons/Arrow.svg" alt = "Arrow" class = "text-symbol white-symbol"></a>
                 </article>
 
-                <article class="why-us-card">
+                <article class="why-us-card orange-border">
                     <img src="./icons/PrizeIcon.svg" alt="Prize" class="why-us-card-img">
-                    <h3 class="why-us-card-header">100 Top Brand</h3>
-                    <p class="card-text">
+                    <h3 class="card-header black-text semibold">100 Top Brand</h3>
+                    <p class="card-text regular gray">
                         We are one of the best brands in the Food and Beverage sector in Indonesia.
                     </p>
-                    <a href="#" class="why-us-card-link">Learn More <img src = "./icons/Arrow.svg" alt = "Arrow" class = "text-symbol"></a>
+                    <a href="#" class="why-us-card-link regular gray btn">Learn More <img src = "./icons/Arrow.svg" alt = "Arrow" class = "text-symbol"></a>
                 </article>
             </div>
         </section>
 
         <section class="reviews">
 
-            <div class = "reviews-container">
-                <div class = "reviews-intro">
-                    <h2 class = "section-header">What Are People Saying About Us</h2>
-                    <p class = "section-smaller-text">
-                        We are very happy if you are satisfied with our service and products, let's read pure reviews from customers who bought our products.
+            <div class = "reviews-intro">
+                <h2 class = "section-header semibold black-text">What Are People Saying <span class="orange">About Us</span></h2>
+                <p class = "section-smaller-text light-gray regular">
+                    We are very happy if you are satisfied with our service and products, let's read pure reviews from customers who bought our products.
+                </p>
+
+                <div class = "reviews-page-counter">
+                    <span class = "section-header semibold black-text">02</span>
+                    <span class = "section-smaller-text light-gray regular">/05</span>
+                </div>
+
+                <div class = "reviews-btn-container">
+                    <button class = "reviews-btn btn inactive-btn"><img src = "./icons/ArrowBack.svg" alt = "Back Arrow" class = "text-symbol white-symbol"></button>
+                    <button class = "reviews-btn btn orange-background"><img src = "./icons/Arrow.svg" alt = "Forward Arrow" class="text-symbol white-symbol"></button>
+                </div>
+
+            </div>
+            <div class = "reviews-content">
+
+                <article class = "reviews-card">
+                    <img src = "./icons/FirstCustomer.png" alt = "Customer" class = "reviews-card-img">
+                    <h3 class = "card-header">Selena Gomz</h3>
+                    <span class = "reviews-card-age gray-transparent">22 Years</span>
+                    <p class = "card-text regular gray">
+                        The salad is fresh!!! Don't ask about the sauce again, it's really delicious, it's going to be routine. I recommend this salad to all of you guys! because they really take care of the quality.
                     </p>
+                </article>
 
-                    <div class = "reviews-page-counter">
-                        <span class = "reviews-page-num">02</span>
-                        <span class = "reviews-total-num">/05</span>
-                    </div>
+                <article class = "reviews-card">
+                    <img src = "./icons/ThirdCustomer.png" alt = "Customer" class = "reviews-card-img">
+                    <h3 class = "card-header">David Ken</h3>
+                    <span class = "reviews-card-age gray-transparent">24 Years</span>
+                    <p class = "card-text regular gray">
+                        The salad is fresh!!! Don't ask about the sauce again, it's really delicious, it's going to be routine. I recommend this salad to all of you guys! because they really take care of the quality.
+                    </p>
+                </article>
 
-                    <div class = "reviews-btn-container">
-                        <button class = "reviews-btn"><img src = "./icons/ArrowBack.svg" alt = "Back Arrow" class = "text-symbol"></button>
-                        <button class = "reviews-btn"><img src = "./icons/Arrow.svg" alt = "Forward Arrow" class="text-symbol"></button>
-                    </div>
-
-                </div>
-                <div class = "reviews-content">
-
-                    <article class = "reviews-card">
-                        <img src = "./icons/FirstCustomer.png" alt = "Customer" class = "reviews-card-img">
-                        <h3 class = "reviews-card-header">Selena Gomz</h3>
-                        <span class = "reviews-card-age">22 Years</span>
-                        <p class = "card-text">
-                            The salad is fresh!!! Don't ask about the sauce again, it's really delicious, it's going to be routine. I recommend this salad to all of you guys! because they really take care of the quality.
-                        </p>
-                    </article>
-
-                    <article class = "reviews-card">
-                        <img src = "./icons/SecondCustomer.png" alt = "Customer" class = "reviews-card-img">
-                        <h3 class = "reviews-card-header">David Ken</h3>
-                        <span class = "reviews-card-age">24 Years</span>
-                        <p class = "card-text">
-                            The salad is fresh!!! Don't ask about the sauce again, it's really delicious, it's going to be routine. I recommend this salad to all of you guys! because they really take care of the quality.
-                        </p>
-                    </article>
-
-                    <article class = "reviews-card">
-                        <img src = "./icons/FirstCustomer.png" alt = "Customer" class = "reviews-card-img">
-                        <h3 class = "reviews-card-header">Jennifer Sina</h3>
-                        <span class = "reviews-card-age">21 Years</span>
-                        <p class = "card-text">
-                            The salad is fresh!!! Don't ask about the sauce again, it's really delicious, it's going to be routine. I recommend this salad to all of you guys! because they really take care of the quality.
-                        </p>
-                    </article>
-                </div>
+                <article class = "reviews-card">
+                    <img src = "./icons/SecondCustomer.png" alt = "Customer" class = "reviews-card-img">
+                    <h3 class = "card-header">Jennifer Sina</h3>
+                    <span class = "reviews-card-age gray-transparent">21 Years</span>
+                    <p class = "card-text regular gray">
+                        The salad is fresh!!! Don't ask about the sauce again, it's really delicious, it's going to be routine. I recommend this salad to all of you guys! because they really take care of the quality.
+                    </p>
+                </article>
+            </div>
         </section>
 
         <section class = "menu">
             <div class = "menu-intro">
-                <h4 class = "subheader">MENU YANG MEMBUATMU JATUH CINTA</h4>
-                <h2 class = "section-header">ENJOY THE BEST MENU AND GET DISCOUNTS AVAILABLE</h2>
+                <h4 class = "subheader medium orange">MENU YANG MEMBUATMU JATUH CINTA</h4>
+                <h2 class = "section-header semibold gray">ENJOY THE BEST MENU AND GET <span class = "orange">DISCOUNTS</span> AVAILABLE</h2>
             </div>
 
             <div class = "menu-content">
                 <article class="menu-card">
                     <img src = "./icons/FirstDish.png" alt = "First Dish" class = "menu-card-img">
-                    <span class = "menu-card-name">Mini Salad Yummy</span>
-                    <h2 class = "menu-card-price">$ 2.99</span>
+                    <div class = 'menu-card-text'>
+                        <span class = "subheader white">Mini Salad Yummy</span>
+                        <h2 class = "section-header white bold no-margin">$ 2.99</h2>
+                    </div>
                 </article>
 
                 <article class="menu-card">
                     <img src = "./icons/SecondDish.png" alt = "Second Dish" class = "menu-card-img">
-                    <span class = "menu-card-name">Completed Salad</span>
-                    <h2 class = "menu-card-price">$ 3.99</span>
+                    <div class = 'menu-card-text'>
+                        <span class = "subheader white">Completed Salad</span>
+                        <h2 class = "section-header white bold no-margin">$ 3.99</h2>
+                    </div>
                 </article>
 
                 <article class="menu-card">
                     <img src = "./icons/ThirdDish.png" alt = "Third Dish" class = "menu-card-img">
-                    <span class = "menu-card-name">Salad Yummy Red</span>
-                    <h2 class = "menu-card-price">$ 3.99</span>
+                    <div class = 'menu-card-text'>
+                        <span class = "subheader white">Salad Yummy Red</span>
+                        <h2 class = "section-header white bold no-margin">$ 3.99</h2>
+                    </div>
                 </article>
             </div>
 
         </section>
 
         <section class = "subscribe">
-            <div class = "subscribe-container">
-                <h4 class = "subheader">Our Subscribe</h4>
-                <h2 class = "section-header">Subscribe To Get The Latest Promo from Jez Salad</h2>
-                <p class = "section-smaller-text">
+            <img src="./icons/Subscribe_Stripes.png" class = "subscribe-stripes">
+            <div class = "subscribe-content">
+                <h4 class = "subheader medium orange">Our Subscribe</h4>
+                <h2 class = "section-header semibold gray">Subscribe To Get The Latest Promo from Jez Salad</h2>
+                <p class = "section-smaller-text gray three-quarters-width">
                     We recommended you to subscribe to our promo program, drop your email below to get daily update about us
                 </p>
+                </div>
 
                 <form class = "subscribe-form" action = "#">
                     <input type = "email" class = "subscribe-input" placeholder = "Enter your email address">
-                    <input type = "submit" value = "Subscribe" class = "subscribe-submit"></button>
+                    <input type = "submit" value = "Subscribe" class = "subscribe-submit btn"></button>
                 </form>
-            </div>
         </section>
     </main>
 
     <footer class = "footer">
         <div class = "copyright">
-            <h3 class = "logo"> <span class = "logo-highlight">JEZ</span> SALAD </h3>
-            <p class="copyright-text">Jez Salad is the pioneer of healthy fruit salad with high nutrition.</p>
-            <span class = "copyright-text">©Copyright Jez Salad</span>
+            <h3 class = "logo bold dark-gray"> <span class = "orange black">JEZ</span> SALAD </h3>
+            <p class="copyright-text regular gray three-quarters-width">Jez Salad is the pioneer of healthy fruit salad with high nutrition.</p>
+            <span class = "copyright-symbol regular black-text">©Copyright Jez Salad</span>
         </div>
 
-        <div class = "footer-links">
-            <h3 class = "footer-links-header">FEATURE</h3>
-            <a href = "#" class = "footer-link">Menu</a>
-            <a href = "#" class = "footer-link">Promo</a>
-            <a href = "#" class = "footer-link">Contact</a>
-            <a href = "#" class = "footer-link">About Us</a>
+        <div class = "footer-links no-margin">
+            <h3 class = "footer-header semibold orange">FEATURE</h3>
+            <a href = "#" class = "footer-link regular light-gray">Menu</a>
+            <a href = "#" class = "footer-link regular light-gray">Promo</a>
+            <a href = "#" class = "footer-link regular light-gray">Contact</a>
+            <a href = "#" class = "footer-link regular light-gray">About Us</a>
         </div>
 
-        <address class = "address">
-            <h3 class = "address-header">GET IN TOUCH</h3>
+        <div class = "address">
+            <h3 class = "footer-header semibold orange">GET IN TOUCH</h3>
             <div class = "address-container">
                 <img class = "address-icon" src = "./icons/Location.svg" alt = "Location">
-                <span class = "address-text">8819 Ohio St. South Gate, CA 90280</span>
+                <span class = "address-text regular light-gray">8819 Ohio St. South Gate, CA 90280</span>
             </div>
             <div class = "address-container">
                 <img class = "address-icon" src = "./icons/Mail.svg" alt = "Email">
-                <span class = "address-text">Ourstudio@hello.com</span>
+                <span class = "address-text regular light-gray">Ourstudio@hello.com</span>
             </div>
             <div class = "address-container">
                 <img class = "address-icon" src = "./icons/Phone.svg" alt = "Phone">
-                <span class = "address-text">+1 386-688-3295</span>
+                <span class = "address-text regular light-gray">+1 386-688-3295</span>
             </div>
-        </address>
+        </div>
 
-        <address class = "social-media">
-            <a class = "social-media-link" href = "#">
-                <img class = "social-media-icon" src = "./icons/Twitter.svg" alt = "Twitter">
-            </a>
+        <div class = "social-media">
+            <div class = "social-media-icons">
+                <a class = "social-media-link" href = "#">
+                    <img class = "social-media-icon" src = "./icons/Twitter.svg" alt = "Twitter">
+                </a>
 
-            <a class = "social-media-link" href = "#">
-                <img class = "social-media-icon" src = "./icons/LinkedIn.svg" alt = "LinkedIn">
-            </a>
+                <a class = "social-media-link" href = "#">
+                    <img class = "social-media-icon" src = "./icons/LinkedIn.svg" alt = "LinkedIn">
+                </a>
 
-            <a class = "social-media-link" href = "#">
-                <img class = "social-media-icon" src = "./icons/Insta.svg" alt = "Insta">
-            </a>
-            <span class = "social-media-text">Follow Us On Social Media</span>
-        </address>
+                <a class = "social-media-link" href = "#">
+                    <img class = "social-media-icon" src = "./icons/Insta.svg" alt = "Insta">
+                </a>
+            </div>
+            <span class = "social-media-text regular light-gray">Follow our social media.</span>
+        </div>
 
     </footer>
 </body>
